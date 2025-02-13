@@ -1,0 +1,81 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  html , body{
+      height: 100%;
+      width: 100%;
+  }
+  #main{
+    padding: 5vw;
+  }
+  #main h1{
+    text-align: center;
+  }
+   h5{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  #parent{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 3vh;
+  }
+  .child{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.612);
+    padding: 2vh;
+    border-radius: 5px;
+  }
+  img{
+    width: 82vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .child h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .child h5{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  p{
+    text-align: center;
+    color: rgba(29, 29, 29, 0.589);
+    margin-top: 30px;
+  }
+  @media (min-width:768px) {
+    #parent{
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: 42vh 42vh;
+    }
+    h5{
+      font-size: 0.9rem;
+    }
+    img{
+      width: 95%;
+      height: 60%;
+      object-fit: cover;
+    }
+    .child h4{
+      margin-top: -20px;
+    }
+    .child h3{
+      font-size: 1rem;
+    }
+    .child h5{
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    p{
+      padding-bottom: 3vh;
+      font-size: 0.7rem;
+    }
+  }
